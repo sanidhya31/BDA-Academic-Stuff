@@ -1,5 +1,0 @@
-hello hello world
-hello data
-world hello
-big data hello
-hello spark
