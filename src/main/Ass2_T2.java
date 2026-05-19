@@ -30,6 +30,8 @@ public class Ass2_T2 extends Configured implements Tool {
 
             String[] parts = line.split(":", 2);
 
+
+            //
             if (parts.length < 2) {
                 return;
             }
