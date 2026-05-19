@@ -41,3 +41,5 @@ build/
 # Added for repo hygiene
 .idea/
 output/*.crc
+/output/
+/input/
