@@ -19,7 +19,7 @@ import org.apache.hadoop.util.ToolRunner;
 
 import java.io.IOException;
 
-public class Ass2_T2 extends Configured implements Tool {
+public class Ass3_T2 extends Configured implements Tool {
 
     public static class Map extends Mapper<Object, Text, Text, Text> {
 
@@ -49,7 +49,7 @@ public class Ass2_T2 extends Configured implements Tool {
         Configuration conf = getConf();
 
         Job job = Job.getInstance(conf, "grep");
-        job.setJarByClass(Ass2_T2.class);
+        job.setJarByClass(Ass3_T2.class);
 
         // set Mapper class
         job.setMapperClass(Map.class);
@@ -77,6 +77,6 @@ public class Ass2_T2 extends Configured implements Tool {
     }
 
     public static void main(String[] args) throws Exception {
-        ToolRunner.run(new Configuration(), new Ass2_T2(), args);
+        ToolRunner.run(new Configuration(), new Ass3_T2(), args);
     }
 }
